@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #9dd1ed;
+}
+
+header {
+    background-color: gray;
+    padding: 0.5px;
+    border: 0.5px solid black;
+    border-radius: 5px;
+    color: white;
+}
+
+p {
+    color: gray;
+}
+
+.wrapper {
+    max-width: 410px;
+    height: 250px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    padding-bottom: 50px;
+    width: 250px;
+    transition: height 0.2s ease;
+}
+
+.wrapper.active {
+    height: 450px;
+}
+
+.bar {
+    height: 50px;
+
+    border-radius: 15px;
+}
+
+.inp {
+    display: flex;
+    padding: 10px;
+    border-radius: 15px;
+    flex-direction: column;
+}
+
+.but {
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 20px;
+    height: 50px;
+    color: white;
+    background-color: #34abeb;
+    border: none;
+    border-radius: 15px;
+}
+
+.wrapper .im {
+    opacity: 0;
+    border-radius: 15px;
+    pointer-events: none;
+    border: 2px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.5s 0.05s ease;
+}
+
+.wrapper.active .im {
+    top: -50px;
+    margin-top: 20px;
+    opacity: 1;
+    pointer-events: auto;
+}
